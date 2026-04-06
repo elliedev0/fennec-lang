@@ -2,7 +2,7 @@
 
 Fennec styling involves defining styles for text prior to the text:
 
-(size=2,weight=bold) Hello World
+(large,weight:bold) Hello World
 
 Compiled into HTMl (depending on compiler and settings) would be:
 
@@ -13,7 +13,7 @@ Compiled into HTMl (depending on compiler and settings) would be:
 Inline styling is also possible by wrapping inline text in the % operator,
 signifying that it should be treated separately (while keeping parent text styles unless overidden)
 
-(size=2) Hello %(weight=bold) World%
+(large) Hello %(weight:bold) World%
 
 Would compile into:
 
@@ -24,7 +24,7 @@ Would compile into:
 Multi-line styling involves using square brackets to show which lines inbetween an open and closed bracket to style
 
 Therefore
-(size=2)\[
+(large)\[
 Hello
 World
 ]
